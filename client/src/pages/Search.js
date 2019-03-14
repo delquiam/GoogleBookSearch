@@ -23,12 +23,8 @@ class Search extends Component {
   };
 
   saveBook = book => {
-    const title = book.title;
-    const author = book.authors;
     API.saveBook(book)
       .then(() => {
-        // API.savedBook();
-        alert('Saved "' + title + '"');
       })
       .catch(err => console.log(err));
   };
@@ -63,7 +59,7 @@ class Search extends Component {
                 <Row>
                   <Col size="12">
                     <Button
-                      colors="deep-blue right"
+                      colors="blue right"
                       handleClickEvent={this.handleFormSubmit}
                     >
                       Search
