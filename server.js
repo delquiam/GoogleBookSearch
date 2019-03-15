@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const routes = require("./routes/index.js");
 const mongoose = require("mongoose");
+const axios = require("axios");
 
 const PORT = process.env.PORT || 3001;
 const MONGODB_URI =
